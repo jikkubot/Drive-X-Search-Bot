@@ -26,7 +26,7 @@ def start(update, context):
             sendMessage(start_string, context.bot, update)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\n\nPlease Join Our Channel<b>@FilmClubChannel</b>.',
+            'Oops! not a Authorized user.\n\nPlease Join Our Channel<b> @FilmClubChannel </b>.',
             context.bot,
             update,
             reply_markup,
