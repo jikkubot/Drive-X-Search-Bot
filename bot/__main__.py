@@ -13,7 +13,7 @@ from bot.helper.telegram_helper import button_builder
 
 def start(update, context):
     buttons = button_builder.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/usmanmughalji/Drive-X-Search-Bot")
+    buttons.buildbutton("Join Our Channel", "https://t.me/FilmClubChannel")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(1))
     uptime = get_readable_time((time.time() - botStartTime))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id,update.message.chat.username,update.message.text))
@@ -26,7 +26,7 @@ def start(update, context):
             sendMessage(start_string, context.bot, update)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\n\nPlease Deploy Your Own <b>Drive-X-Search-Bot</b>.',
+            'Oops! not a Authorized user.\n\nPlease Join Our Channel<b>@FilmClubChannel</b>.',
             context.bot,
             update,
             reply_markup,
