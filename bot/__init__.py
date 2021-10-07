@@ -113,9 +113,9 @@ except KeyError:
 try:
     BOT_SOURCE_CODE = getConfig('BOT_SOURCE_CODE')
     if len(BOT_SOURCE_CODE) == 0:
-        BOT_SOURCE_CODE = 'https://github.com/usmanmughalji/Drive-X-Search-Bot'
+        BOT_SOURCE_CODE = 'https://t.me/filmclubchannel'
 except KeyError:
-    BOT_SOURCE_CODE = 'https://github.com/usmanmughalji/Drive-X-Search-Bot'
+    BOT_SOURCE_CODE = 'https://t.me/filmclubchannel'
 
 for envs in ["DRIVE_NAME", "DRIVE_ID", "INDEX_URL"]:
     try:
